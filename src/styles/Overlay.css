@@ -1,0 +1,28 @@
+.overlay {
+    background-color: rgba(248, 244, 244, 0.313);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: lightgoldenrodyellow;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
