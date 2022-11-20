@@ -1,13 +1,13 @@
 # Speedy Mosquitoe
 
-##Description
+## Description
 
 This is web app game in which the gamer attempts to kill mosquitoes which flies to different positions on the screen.
 
 
 <img width="738" alt="gameScreenShot" src="https://user-images.githubusercontent.com/92304761/202905518-a4c0fe75-6c92-4169-bdce-c8916a6c32c0.png" height="500px" width="500px">
 
-###Instructions
+### Instructions
 
 * Click on the start button to begin
 * Click on the mosquitoe as it appears on the screen to kill it.
