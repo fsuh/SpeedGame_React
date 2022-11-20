@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Speedy_Mosquitoe/static/css/main.3cdb6f95.css",
+    "main.js": "/Speedy_Mosquitoe/static/js/main.67eddbf5.js",
+    "static/media/gameOver.wav": "/Speedy_Mosquitoe/static/media/gameOver.5b67b7bbb2fbadce6856.wav",
+    "static/media/mosquitoe.mp3": "/Speedy_Mosquitoe/static/media/mosquitoe.0d9498083b831227d7e7.mp3",
+    "static/media/click.wav": "/Speedy_Mosquitoe/static/media/click.13de482cfa40b3cd1a95.wav",
+    "index.html": "/Speedy_Mosquitoe/index.html",
+    "main.3cdb6f95.css.map": "/Speedy_Mosquitoe/static/css/main.3cdb6f95.css.map",
+    "main.67eddbf5.js.map": "/Speedy_Mosquitoe/static/js/main.67eddbf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cdb6f95.css",
+    "static/js/main.67eddbf5.js"
+  ]
+}
