@@ -13,7 +13,7 @@
   .modal {
     background-color: lightgoldenrodyellow;
     height: 200px;
-    width: 300px;
+    width: 350px;
     position: relative;
     display: flex;
     align-items: center;
@@ -25,4 +25,13 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+  }
+
+  .modal h2 {
+    font-size: 2rem;
+  }
+
+  .modal p{
+    font-size: 2rem;
+    word-spacing: 0.5em;
   }

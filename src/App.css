@@ -1,5 +1,36 @@
-.App {
+header{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100vw;
+
+}
+
+.App .lives{
+  text-align: right;
+  font-size: 2rem;
+  font-family: 'Rubik Bubbles', cursive;
+  
+}
+.App .rounds{
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Rubik Bubbles', cursive;
+}
+
+.App .score{
   text-align: center;
+  font-size: 2rem;
+  word-spacing: 0.5em;
+}
+
+.App .title {
+  grid-column: span 3;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 3rem;
+  word-spacing: 0.5em;
 
 }
 button {
@@ -28,6 +59,15 @@ main{
   justify-content: space-evenly;
   flex-flow: row wrap;
   margin-bottom: 30px;
+  height: 50vh;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
 }
 
 

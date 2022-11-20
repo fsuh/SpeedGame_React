@@ -44,7 +44,6 @@ class App extends Component {
   clickHandler = (index) =>{
     this.clickPlay();
     if(this.state.current !== index){
-      this.setState({lives: this.state.lives -1})
       return this.endHandler();
     }
     this.setState({
@@ -68,9 +67,9 @@ class App extends Component {
     
     this.setState({
       current: nextActive,
-      pace: this.state.pace - 10,
-      lives: this.state.lives -1,
-      rounds: this.state.rounds - 0.25,
+      pace: this.state.pace * 0.99,
+      lives: this.state.lives - 0.19,
+      rounds: this.state.rounds - 0.25
     });
     
     this.timer = setTimeout(this.nextCircle, this.state.pace)
@@ -107,6 +106,7 @@ class App extends Component {
     this.setState ({showOverlay:false})
     this.resetHandler();
   }
+  imgUrl= 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-jr.brainpop.com%2Fhealth%2Fberesponsible%2Freducereuserecycle%2Fplain_icon.png&f=1&nofb=1&ipt=8ea519291c60b2e6714923184c29a6e4e766f81fdd66eefdf0e6877329045ad3&ipo=images' 
 
 
   render() {
@@ -114,10 +114,10 @@ class App extends Component {
       <div className='App'>
       <header>
       <h1 className='title'>Smack the Mosquito </h1>
-      <p className="lives">🙂{this.state.lives}</p>
-      <p className="rounds"><img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-jr.brainpop.com%2Fhealth%2Fberesponsible%2Freducereuserecycle%2Fplain_icon.png&f=1&nofb=1&ipt=8ea519291c60b2e6714923184c29a6e4e766f81fdd66eefdf0e6877329045ad3&ipo=images' alt='recycle' width='30px' height='30px'/> {this.state.rounds}</p>
-
+      <p className="lives">🙂{Math.floor(this.state.lives)}</p>
       <p className='score'>You've Kill:<span> {this.state.score}</span> Mosquitoes</p>
+      <p className="rounds"><img src={this.imgUrl} alt='recycle' width='30px' height='30px'/> {Math.floor(this.state.rounds)}</p>
+     
       </header>
       <main>
       {Array.from(new Array(this.state.circles)).map((_,index) =>(
